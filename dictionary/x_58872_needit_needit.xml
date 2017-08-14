@@ -4,7 +4,7 @@
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element label="Human resources" sequence="0" value="HR"/>
                 <element label="Facilities" sequence="1" value="Facilities"/>
@@ -12,6 +12,7 @@
                 <element label="Your department choise" sequence="3" value="your_depatment"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_string_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
                 <element label="Human resources 1" sequence="0" value="hr1"/>
